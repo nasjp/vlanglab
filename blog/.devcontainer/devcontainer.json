@@ -1,0 +1,30 @@
+{
+	"name": "Vlang Blog",
+	"dockerComposeFile": [
+		"../docker-compose.yml",
+	],
+	"service": "app",
+	"workspaceFolder": "/app",
+	"settings": {
+		// json
+		"[json]": {
+			"editor.quickSuggestions": {
+				"strings": true
+			},
+			"editor.suggest.insertMode": "replace",
+			"editor.defaultFormatter": "vscode.json-language-features"
+		},
+		// vlang
+		"v.vls.customPath": "/opt/vlang/vls/cmd/vls/vls",
+		"v.vls.enable": true,
+		"[v]": {
+			"editor.tabCompletion": "onlySnippets",
+			"editor.defaultFormatter": "vlanguage.vscode-vlang",
+		},
+	},
+	"extensions": [
+		"vlanguage.vscode-vlang",
+		"alexcvzz.vscode-sqlite",
+		"mtxr.sqltools",
+	],
+}

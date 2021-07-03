@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  app:
+    build: .
+    command: v run .
+    working_dir: /app
+    volumes:
+      - ./:/app:delegated
+    ports:
+      - "8081:8081"
